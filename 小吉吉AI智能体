@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lucky Chang - 小吉吉的以太圣域</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f2f1ec",
+              "secondary-fixed": "#ffc787",
+              "error-dim": "#b92902",
+              "inverse-on-surface": "#9e9d99",
+              "surface-container-high": "#e4e2de",
+              "tertiary-fixed-dim": "#c18bf7",
+              "on-tertiary-fixed-variant": "#511a83",
+              "background": "#f8f6f2",
+              "primary-container": "#fdcc16",
+              "on-tertiary": "#fbefff",
+              "outline": "#777774",
+              "on-secondary-container": "#663e00",
+              "inverse-surface": "#0e0e0d",
+              "primary-fixed": "#fdcc16",
+              "primary-dim": "#624d00",
+              "on-surface-variant": "#5b5c59",
+              "on-secondary": "#fff0e3",
+              "on-tertiary-fixed": "#270049",
+              "surface-dim": "#d5d4d0",
+              "on-surface": "#2e2f2d",
+              "surface-tint": "#705900",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#ffc787",
+              "primary": "#705900",
+              "on-tertiary-container": "#470c7a",
+              "surface": "#f8f6f2",
+              "tertiary": "#7542a9",
+              "outline-variant": "#aeadaa",
+              "inverse-primary": "#fdcc16",
+              "surface-container-highest": "#deddd8",
+              "secondary": "#825000",
+              "error": "#b02500",
+              "tertiary-fixed": "#cd9bff",
+              "on-primary-fixed-variant": "#634e00",
+              "on-background": "#2e2f2d",
+              "primary-fixed-dim": "#edbe00",
+              "on-error-container": "#520c00",
+              "tertiary-container": "#cd9bff",
+              "on-secondary-fixed-variant": "#734700",
+              "error-container": "#f95630",
+              "secondary-dim": "#724600",
+              "secondary-fixed-dim": "#ffb557",
+              "surface-bright": "#f8f6f2",
+              "on-primary": "#fff1d5",
+              "on-error": "#ffefec",
+              "on-primary-container": "#584500",
+              "surface-variant": "#deddd8",
+              "tertiary-dim": "#68359b",
+              "on-secondary-fixed": "#4c2d00",
+              "surface-container": "#e9e8e4",
+              "on-primary-fixed": "#413200"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .aura-glow {
+        background: radial-gradient(circle at center, rgba(253, 204, 22, 0.15) 0%, rgba(248, 246, 242, 0) 70%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/60 dark:bg-stone-900/60 backdrop-blur-xl shadow-[0_40px_40px_rgba(46,47,45,0.06)] flex justify-between items-center h-20 px-12 w-full max-w-none">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-black text-[#705900] dark:text-[#f9c80e] tracking-tight font-headline">Lucky Chang</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold text-[#705900] dark:text-[#f9c80e] border-b-2 border-[#fdcc16] pb-1" href="#">首页</a>
+<a class="font-headline font-medium text-stone-500 dark:text-stone-400 hover:text-[#705900] transition-colors" href="#">占卜</a>
+<a class="font-headline font-medium text-stone-500 dark:text-stone-400 hover:text-[#705900] transition-colors" href="#">香氛</a>
+<a class="font-headline font-medium text-stone-500 dark:text-stone-400 hover:text-[#705900] transition-colors" href="#">我的</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="p-2 hover:bg-stone-100/50 dark:hover:bg-stone-800/50 rounded-full transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</button>
+<button class="p-2 hover:bg-stone-100/50 dark:hover:bg-stone-800/50 rounded-full transition-all active:scale-95">
+<span class="material-symbols-outlined text-on-surface-variant">settings</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container shadow-sm">
+<img alt="Little Lucky Elephant profile avatar" class="w-full h-full object-cover" data-alt="A stylized miniature elephant avatar with golden accents and a friendly expression on a soft warm background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ZwQYKRHyiwL8DOHnTznCa9fBBozry5toMXNSaOU6ODxHyWi_uv1ifNxAWJsMSVMI1LUi9Bels0VgaqlCYhz50PTbYgm3hwBvV0c_qzcVpJC0gU_SY_8sVpsSBpaTcpd7gazWpOjuL9Wnol6A8aDgOG3W07QeOnWz3MdVXSmqHbj-DtrbZ_rqGnBQkTbF6hGkDlJKtu4MHt0S0xJnvDtlZk5yzBNJZI0-T0ce7cHCb1I-hd-C03i5bttRz8y_tzlUqDG0GxK9cJVA"/>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-12 max-w-7xl mx-auto space-y-16">
+<!-- Hero Section: The Welcome -->
+<section class="relative flex flex-col md:flex-row items-center gap-12 aura-glow rounded-lg p-8">
+<div class="flex-1 space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container/30 text-on-secondary-container rounded-full backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-xs font-bold tracking-widest">ETHERAL SANCTUARY</span>
+</div>
+<h1 class="text-6xl font-headline font-extrabold leading-tight text-on-surface tracking-tight">
+                    早安，寻香者。<br/>
+<span class="text-primary-dim">今日你的灵感散发着檀香的气息。</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                    在小吉吉的守护下，开始你今日的灵性之旅。气味是通往灵魂的捷径，让我们一起调制属于你的幸运时刻。
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-xl hover:shadow-primary-container/20 transition-all active:scale-95">
+                        开启感官
+                    </button>
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-low transition-all active:scale-95 border border-outline-variant/10">
+                        查看指引
+                    </button>
+</div>
+</div>
+<div class="relative flex-1 flex justify-center items-center">
+<!-- Mascot Image -->
+<div class="relative z-10 w-80 h-80 md:w-96 md:h-96">
+<img class="w-full h-full object-contain drop-shadow-2xl" data-alt="A charming little golden elephant mascot sitting peacefully on a floating lotus leaf, soft lighting, ethereal particles floating around, warm yellow and white color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRZN9VRqot09CyJSsAb33i8Q9pyZvrRL8miIoVIQtSaauQnUqHJij_carGzGP5ZJkSlz7g80wCwNwvYg8wVdXKeBv2tO3tJJfbD4OVOAUR0dq_ndhsUdTQhSBV9lenMBfoPEEtg8cXG94UlNuN1uWnr258cdBxFk0c4lbzoQnQY5ozDkbVdA-CxWho0QnOmytwd4iyw0YK-acN1RWO6RJ0mWb5N7jQMIY1oooNmGLgKmzjh4NxvveUWhh3Fg3pCMAU3NdvBrsdGQ4K"/>
+</div>
+<!-- Abstract aura behind mascot -->
+<div class="absolute inset-0 bg-primary-container/20 blur-[100px] rounded-full scale-75 animate-pulse"></div>
+</div>
+</section>
+<!-- Stats & Features Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Lucky Score Card (Bento Style) -->
+<div class="md:col-span-4 bg-surface-container-lowest p-10 rounded-lg shadow-[0_40px_40px_rgba(46,47,45,0.06)] border border-outline-variant/5 flex flex-col justify-between items-center text-center">
+<div class="space-y-2">
+<h3 class="text-on-surface-variant font-headline font-bold text-sm tracking-widest uppercase">今日吉运指数</h3>
+<div class="relative flex items-center justify-center">
+<svg class="w-48 h-48 transform -rotate-90">
+<circle class="text-surface-container-low" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary-container" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-dasharray="552.92" stroke-dashoffset="66.35" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-5xl font-black font-headline text-on-surface">88</span>
+<span class="text-sm font-medium text-on-surface-variant">/ 100</span>
+</div>
+</div>
+</div>
+<div class="mt-6 p-4 bg-primary-container/10 rounded-2xl">
+<p class="text-sm font-medium text-primary">“万事亨通，适宜创作与冥想”</p>
+</div>
+</div>
+<!-- Feature Cards Container -->
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1: Divine Prophecy -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg border border-outline-variant/5 shadow-[0_40px_40px_rgba(46,47,45,0.06)] hover:translate-y-[-4px] transition-transform duration-300">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Mystical tarot cards and incense smoke in a dimly lit, cozy room with warm candlelight and aesthetic spiritual vibes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfzPQypmrOt_QDdJwy1sQwW3sonrUIC2CeSEv-LlMJYuJFBriekJcW_TmGjIA8dn-ElsW1kBQx55jNj5RTUkbkPSSJ3ZiubzfP1BHRTbMtqeRU2UrMJkm854Vg5g9UgLjqK_dBAUA16JlE7FC4LlXe9bgzT7G_BtLAbcn7EfF2GGJa8yal130gIN8IyyOiPvgZCQlalwXgCfr1INZuPO-8pUCHkj_0fqTueX9jZH9Qhn07sicZtwmioTeyVLYtCuf5j2t_0w_XiZO7"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<h2 class="text-2xl font-headline font-bold text-on-surface">神圣预言</h2>
+<span class="material-symbols-outlined text-primary text-3xl">auto_fix_high</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">透过古老的智慧与AI算法，揭开今日命运的纱幕，为你指引方向。</p>
+<button class="w-full bg-surface-container-high text-on-surface font-headline font-bold py-3 rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-colors active:scale-95">
+                            解读命运
+                        </button>
+</div>
+</div>
+<!-- Card 2: Scent Alchemist -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg border border-outline-variant/5 shadow-[0_40px_40px_rgba(46,47,45,0.06)] hover:translate-y-[-4px] transition-transform duration-300">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Collection of minimalist glass perfume bottles on a wooden surface with soft sunlight filtering through leaves, creating elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3BT3Zwg03DCVHOgDQ3Ldm1YEcdMh2b0h7-7Zd3HNDQSeXHldHL2Uql7umpJcjfDO5VWBolzz1sB9vInbLacCkBGlYH_rm_HdK7KRdbWYIcd9xTL_my75_cPf9ixZbdeKDAjsm4z5tXMfzF6F-oH8ldKcIt4pItgrDSfbN7h6xiKrFcTcNOYOaRvYUryqJtr-rLsugIL8lf4uzrN3Bv9lg8kkRif5KBUra13oUn4jFuAZGDEM47B6MvbasNBAQFTr-eN3BrIwWEwlU"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<h2 class="text-2xl font-headline font-bold text-on-surface">气味炼金术</h2>
+<span class="material-symbols-outlined text-primary text-3xl">fluid_med</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">根据你的心情和运势，由小吉吉为你定制独一无二的专属感官香氛。</p>
+<button class="w-full bg-surface-container-high text-on-surface font-headline font-bold py-3 rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-colors active:scale-95">
+                            调制专属香氛
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Signature Aura Section (Mystical Moments) -->
+<section class="bg-secondary-container/20 rounded-lg p-12 text-center space-y-6 relative overflow-hidden">
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-primary-container/20 blur-[80px] rounded-full"></div>
+<div class="absolute -bottom-24 -right-24 w-64 h-64 bg-secondary-fixed/30 blur-[80px] rounded-full"></div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">temp_preferences_custom</span>
+<h2 class="text-3xl font-headline font-bold text-on-surface">灵感角落</h2>
+<p class="text-on-surface-variant italic leading-relaxed">“当下的每一口呼吸，都是与宇宙的深刻对话。在檀香的静谧中，寻找内心深处未被发现的力量。”</p>
+<div class="flex flex-wrap justify-center gap-3 pt-4">
+<span class="bg-surface-container-lowest px-4 py-2 rounded-lg text-sm text-on-surface-variant font-medium border border-outline-variant/10">檀香</span>
+<span class="bg-surface-container-lowest px-4 py-2 rounded-lg text-sm text-on-surface-variant font-medium border border-outline-variant/10">晨曦</span>
+<span class="bg-surface-container-lowest px-4 py-2 rounded-lg text-sm text-on-surface-variant font-medium border border-outline-variant/10">觉醒</span>
+<span class="bg-surface-container-lowest px-4 py-2 rounded-lg text-sm text-on-surface-variant font-medium border border-outline-variant/10">金币</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-950 flex flex-col items-center gap-6 px-8 w-full border-t border-stone-100 dark:border-stone-800 py-12">
+<div class="flex gap-12 text-sm font-body text-stone-500 dark:text-stone-400">
+<a class="hover:text-[#fdcc16] transition-colors" href="#">关于我们</a>
+<a class="hover:text-[#fdcc16] transition-colors" href="#">使用协议</a>
+<a class="hover:text-[#fdcc16] transition-colors" href="#">隐私政策</a>
+</div>
+<div class="flex items-center gap-4 opacity-80 hover:opacity-100 transition-opacity">
+<span class="text-lg font-bold text-stone-400">Lucky Chang</span>
+<div class="w-1.5 h-1.5 rounded-full bg-stone-300"></div>
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-500 dark:text-stone-400">© 2024 The Ethereal Sanctuary. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
